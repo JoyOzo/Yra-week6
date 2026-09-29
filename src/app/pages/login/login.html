@@ -1,0 +1,69 @@
+<div
+  class="login-page"
+  [ngStyle]="{'background-color': backgroundColor()}"
+>
+  <div class="login-card">
+
+    <div class="eyebrow">YRA Account</div>
+
+    <h1>Welcome back</h1>
+
+    <p class="subtitle">
+      Sign in to access your member dashboard.
+    </p>
+
+    <form>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+
+        <input
+          id="email"
+          type="email"
+          [formField]="loginForm.email"
+          placeholder="Enter your email"
+        />
+
+        @if (loginForm.email().touched() && loginForm.email().invalid()) {
+          <p class="error">
+            Email is required and must be valid.
+          </p>
+        }
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+
+        <input
+          id="password"
+          type="password"
+          [formField]="loginForm.password"
+          placeholder="Enter your password"
+        />
+
+        @if (loginForm.password().touched() && loginForm.password().invalid()) {
+          <p class="error">
+            Password is required and must be at least 6 characters.
+          </p>
+        }
+      </div>
+
+      <button
+        type="button"
+        class="login-button"
+        (click)="submit()"
+      >
+        Login
+      </button>
+
+      <button
+        type="button"
+        class="observable-button"
+        (click)="submitObservable()"
+      >
+        Login with Observable
+      </button>
+
+    </form>
+  </div>
+</div>

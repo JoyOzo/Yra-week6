@@ -1,0 +1,111 @@
+.home-page {
+  min-height: 100vh;
+  color: #176d86;
+}
+
+/* Hero section */
+.hero {
+  padding: 80px 8%;
+  background: #e8f6fa;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.eyebrow {
+  color: #ff861b;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 15px 0;
+}
+
+.hero h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.hero-buttons button {
+  padding: 14px 24px;
+  border: none;
+  border-radius: 6px;
+  background: #ff861b;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero-buttons button:last-child {
+  background: #1f86a5;
+}
+
+/* What YRA stands for */
+.stand-for {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.stand-for h2,
+.events h2 {
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.pillar {
+  padding: 25px;
+  border-radius: 10px;
+  background: #e8f6fa;
+}
+
+.pillar h3 {
+  color: #ff861b;
+}
+
+/* Events */
+.events {
+  padding: 70px 8%;
+  background: #f7f7f7;
+}
+
+.event-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.event-card {
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.event-card h3 {
+  color: #176d86;
+}
+
+.event-card p {
+  color: #555;
+}
